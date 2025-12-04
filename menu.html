@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Меню кав'ярні Твоя Кава - кава, чай, десерти. Замовляй онлайн!">
+    <meta name="keywords" content="меню, кава, чай, десерти, кав'ярня Київ">
+    <title>Меню - Твоя Кава</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="icon" href="img/favicon-coffee.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- ШАПКА САЙТУ -->
+    <header>
+        <nav class="navbar navbar-content">
+            <!-- Логотип -->
+            <a href="index.html" class="nav-logo">
+                <img class="logo-img" src="img/logo.png" alt="Логотип кав'ярні Твоя Кава">
+                <h2 class="logo-text">Твоя Кава</h2>
+            </a>
+
+            <!-- Навігаційне меню -->
+            <ul class="nav-menu">
+                <button id="menu-close-button" class="fas fa-times" aria-label="Закрити меню"></button>
+                <li class="nav-item"><a href="index.html" class="nav-link">Головна</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">Про нас</a></li>
+                <li class="nav-item"><a href="menu.html" class="nav-link active">Меню</a></li>
+                <li class="nav-item"><a href="gallery.html" class="nav-link">Галерея</a></li>
+                <li class="nav-item"><a href="contacts.html" class="nav-link">Контакти</a></li>
+                <li class="nav-item"><a href="author.html" class="nav-link">Автор</a></li>
+            </ul>
+
+            <!-- Кнопка відкриття меню (мобільна версія) -->
+            <button id="menu-open-button" class="fas fa-bars" aria-label="Відкрити меню"></button>
+        </nav>
+    </header>
+
+    <!-- ОСНОВНИЙ КОНТЕНТ -->
+    <main class="menu-page">
+        <!-- ЗАГОЛОВОК СТОРІНКИ -->
+        <section class="menu-header">
+            <h1 class="menu-title">Наше меню</h1>
+            <p class="menu-subtitle">Обирай свій ідеальний смак — від ароматної кави до солодких десертів</p>
+        </section>
+
+        <!-- ФІЛЬТРИ КАТЕГОРІЙ -->
+        <section class="menu-filters">
+            <button class="filter-btn active" data-category="all">
+                <i class="fas fa-utensils"></i> Усе
+            </button>
+            <button class="filter-btn" data-category="coffee">
+                <i class="fas fa-coffee"></i> Кава
+            </button>
+            <button class="filter-btn" data-category="tea">
+                <i class="fas fa-mug-hot"></i> Чай
+            </button>
+            <button class="filter-btn" data-category="desserts">
+                <i class="fas fa-cookie-bite"></i> Десерти
+            </button>
+        </section>
+
+        <!-- ТОВАРИ МЕНЮ -->
+        <section class="menu-items" id="menu-items">
+            <!-- КАВА -->
+            <article class="menu-card" data-category="coffee" data-name="Еспресо" data-price="45">
+                <div class="menu-img-wrapper">
+                    <img src="img/menu/espresso.jpg" alt="Еспресо" class="menu-img">
+                </div>
+                <h3 class="menu-item-name">Еспресо</h3>
+                <p class="menu-item-desc">Класичний міцний напій з насиченим смаком</p>
+                <span class="menu-item-price">45 грн</span>
+                <button class="add-to-cart-btn">
+                    <i class="fas fa-plus"></i> Додати у замовлення
+                </button>
+            </article>
+
+            <article class="menu-card" data-category="coffee" data-name="Капучино" data-price="65">
+                <div class="menu-img-wrapper">
+                    <img src="img/menu/capuccino.jpg" alt="Капучино" class="menu-img">
+                </div>
+                <h3 class="menu-item-name">Капучино</h3>
+                <p class="menu-item-desc">Ніжна комбінація еспресо та молочної піни</p>
+                <span class="menu-item-price">65 грн</span>
+                <button class="add-to-cart-btn">
+                    <i class="fas fa-plus"></i> Додати у замовлення
+                </button>
+            </article>
+
+            <article class="menu-card" data-category="coffee" data-name="Латте" data-price="70">
+                <div class="menu-img-wrapper">
+                    <img src="img/menu/latte.jpg" alt="Латте" class="menu-img">
+                </div>
+                <h3 class="menu-item-name">Латте</h3>
+                <p class="menu-item-desc">М'який кавовий напій з великою кількістю молока</p>
+                <span class="menu-item-price">70 грн</span>
+                <button class="add-to-cart-btn">
+                    <i class="fas fa-plus"></i> Додати у замовлення
+                </button>
+            </article>
+
+            <article class="menu-card" data-category="coffee" data-name="Американо" data-price="50">
+                <div class="menu-img-wrapper">
+                    <img src="img/menu/americano.jpg" alt="Американо" class="menu-img">
+                </div>
+                <h3 class="menu-item-name">Американо</h3>
+                <p class="menu-item-desc">Еспресо, розбавлений гарячою водою</p>
+                <span class="menu-item-price">50 грн</span>
+                <button class="add-to-cart-btn">
+                    <i class="fas fa-plus"></i> Додати у замовлення
+                </button>
+            </article>
+
+            <article class="menu-card" data-category="coffee" data-name="Флет Вайт" data-price="75">
+                <div class="menu-img-wrapper">
+                    <img src="img/menu/flat-white.jpg" alt="Флет Вайт" class="menu-img">
+                </div>
+                <h3 class="menu-item-name">Флет Вайт</h3>
+                <p class="menu-item-desc">Подвійний еспресо з бархатистим молоком</p>
+                <span class="menu-item-price">75 грн</span>
+                <button class="add-to-cart-btn">
+                    <i class="fas fa-plus"></i> Додати у замовлення
+                </button>
+            </article>
+
+            <article class="menu-card" data-category="coffee" data-name="Раф кава" data-price="80">
+                <div class="menu-img-wrapper">
+                    <img src="img/menu/raf.jpg" alt="Раф кава" class="menu-img">
+                </div>
+                <h3 class="menu-item-name">Раф кава</h3>
+                <p class="menu-item-desc">Еспресо з вершками та ванільним цукром</p>
+                <span class="menu-item-price">80 грн</span>
+                <button class="add-to-cart-btn">
+                    <i class="fas fa-plus"></i> Додати у замовлення
+                </button>
+            </article>
+
+            <!-- ЧАЙ -->
+            <article class="menu-card" data-category="tea" data-name="Чорний чай" data-price="40">
+                <div class="menu-img-wrapper">
+                    <img src="img/menu/black-tea.jpg" alt="Чорний чай" class="menu-img">
+                </div>
+                <h3 class="menu-item-name">Чорний чай</h3>
+                <p class="menu-item-desc">Класичний чорний чай з насиченим смаком</p>
+                <span class="menu-item-price">40 грн</span>
+                <button class="add-to-cart-btn">
+                    <i class="fas fa-plus"></i> Додати у замовлення
+                </button>
+            </article>
+
+            <article class="menu-card" data-category="tea" data-name="Зелений чай" data-price="45">
+                <div class="menu-img-wrapper">
+                    <img src="img/menu/tea-green.jpg" alt="Зелений чай" class="menu-img">
+                </div>
+                <h3 class="menu-item-name">Зелений чай</h3>
+                <p class="menu-item-desc">Легкий та освіжаючий зелений чай</p>
+                <span class="menu-item-price">45 грн</span>
+                <button class="add-to-cart-btn">
+                    <i class="fas fa-plus"></i> Додати у замовлення
+                </button>
+            </article>
+
+            <article class="menu-card" data-category="tea" data-name="Матча латте" data-price="85">
+                <div class="menu-img-wrapper">
+                    <img src="img/menu/matcha.jpg" alt="Матча латте" class="menu-img">
+                </div>
+                <h3 class="menu-item-name">Матча латте</h3>
+                <p class="menu-item-desc">Японський зелений чай матча з молоком</p>
+                <span class="menu-item-price">85 грн</span>
+                <button class="add-to-cart-btn">
+                    <i class="fas fa-plus"></i> Додати у замовлення
+                </button>
+            </article>
+
+            <article class="menu-card" data-category="tea" data-name="Фруктовий чай" data-price="55">
+                <div class="menu-img-wrapper">
+                    <img src="img/menu/fruit-tea.jpg" alt="Фруктовий чай" class="menu-img">
+                </div>
+                <h3 class="menu-item-name">Фруктовий чай</h3>
+                <p class="menu-item-desc">Ароматна суміш фруктів та ягід</p>
+                <span class="menu-item-price">55 грн</span>
+                <button class="add-to-cart-btn">
+                    <i class="fas fa-plus"></i> Додати у замовлення
+                </button>
+            </article>
+
+            <!-- ДЕСЕРТИ -->
+            <article class="menu-card" data-category="desserts" data-name="Чізкейк" data-price="95">
+                <div class="menu-img-wrapper">
+                    <img src="img/menu/cheesecake.jpg" alt="Чізкейк" class="menu-img">
+                </div>
+                <h3 class="menu-item-name">Чізкейк</h3>
+                <p class="menu-item-desc">Ніжний сирний десерт на хрусткій основі</p>
+                <span class="menu-item-price">95 грн</span>
+                <button class="add-to-cart-btn">
+                    <i class="fas fa-plus"></i> Додати у замовлення
+                </button>
+            </article>
+
+            <article class="menu-card" data-category="desserts" data-name="Тірамісу" data-price="105">
+                <div class="menu-img-wrapper">
+                    <img src="img/menu/tiramisu.jpg" alt="Тірамісу" class="menu-img">
+                </div>
+                <h3 class="menu-item-name">Тірамісу</h3>
+                <p class="menu-item-desc">Італійський десерт з кавою та маскарпоне</p>
+                <span class="menu-item-price">105 грн</span>
+                <button class="add-to-cart-btn">
+                    <i class="fas fa-plus"></i> Додати у замовлення
+                </button>
+            </article>
+
+            <article class="menu-card" data-category="desserts" data-name="Круасан" data-price="60">
+                <div class="menu-img-wrapper">
+                    <img src="img/menu/croissant.jpg" alt="Круасан" class="menu-img">
+                </div>
+                <h3 class="menu-item-name">Круасан</h3>
+                <p class="menu-item-desc">Свіжа французька випічка з хрусткою скоринкою</p>
+                <span class="menu-item-price">60 грн</span>
+                <button class="add-to-cart-btn">
+                    <i class="fas fa-plus"></i> Додати у замовлення
+                </button>
+            </article>
+
+            <article class="menu-card" data-category="desserts" data-name="Брауні" data-price="75">
+                <div class="menu-img-wrapper">
+                    <img src="img/menu/brownie.jpg" alt="Брауні" class="menu-img">
+                </div>
+                <h3 class="menu-item-name">Брауні</h3>
+                <p class="menu-item-desc">Шоколадний пиріг з горіхами</p>
+                <span class="menu-item-price">75 грн</span>
+                <button class="add-to-cart-btn">
+                    <i class="fas fa-plus"></i> Додати у замовлення
+                </button>
+            </article>
+
+            <article class="menu-card" data-category="desserts" data-name="Макарон" data-price="35">
+                <div class="menu-img-wrapper">
+                    <img src="img/menu/macaron.jpg" alt="Макарон" class="menu-img">
+                </div>
+                <h3 class="menu-item-name">Макарон</h3>
+                <p class="menu-item-desc">Французьке мигдальне тістечко (1 шт)</p>
+                <span class="menu-item-price">35 грн</span>
+                <button class="add-to-cart-btn">
+                    <i class="fas fa-plus"></i> Додати у замовлення
+                </button>
+            </article>
+
+            <article class="menu-card" data-category="desserts" data-name="Еклер" data-price="65">
+                <div class="menu-img-wrapper">
+                    <img src="img/menu/eclair.jpg" alt="Еклер" class="menu-img">
+                </div>
+                <h3 class="menu-item-name">Еклер</h3>
+                <p class="menu-item-desc">Заварне тістечко з кремовою начинкою</p>
+                <span class="menu-item-price">65 грн</span>
+                <button class="add-to-cart-btn">
+                    <i class="fas fa-plus"></i> Додати у замовлення
+                </button>
+            </article>
+        </section>
+
+        <!-- КАЛЬКУЛЯТОР ЗАМОВЛЕННЯ -->
+        <section class="order-calculator">
+            <div class="calculator-content">
+                <h3><i class="fas fa-calculator"></i> Калькулятор замовлення</h3>
+                <div class="calculator-info">
+                    <p>Товарів обрано: <span id="total-items">0</span></p>
+                    <p>Загальна сума: <span id="total-price">0</span> грн</p>
+                </div>
+                <button class="button checkout-btn" id="checkout-btn" disabled>
+                    <i class="fas fa-shopping-bag"></i> Оформити замовлення
+                </button>
+            </div>
+        </section>
+
+        <!-- ВІДЖЕТ КУРСУ ВАЛЮТ -->
+        <section class="currency-widget-section">
+            <h2 class="widget-title">Актуальний курс валют</h2>
+            <p class="widget-subtitle">Інформаційний віджет для наших гостей</p>
+            
+            <div class="currency-widget">
+                <div id='kurs-com-ua-informer-mini-100x80-nbu-usd-uah-eur-uah-gbp-uah-blue-container'>
+                    <a href="//old.kurs.com.ua/ua/informer" id="kurs-com-ua-informer-mini-100x80-nbu-usd-uah-eur-uah-gbp-uah-blue" 
+                       title="Курс валют інформер Україна" rel="nofollow" target="_blank">Інформер курса валют</a>
+                </div>
+                
+                <script type='text/javascript'>
+                (function() {
+                    var iframe = '<ifr'+'ame src="//old.kurs.com.ua/ua/informer/mini2/nbu/usd/uah/eur/uah/gbp/uah?color=blue" width="100" height="80" frameborder="0" vspace="0" scrolling="no" hspace="0"></ifr'+'ame>';
+                    var container = document.getElementById('kurs-com-ua-informer-mini-100x80-nbu-usd-uah-eur-uah-gbp-uah-blue');
+                    if(container) {
+                        container.parentNode.innerHTML = iframe;
+                    }
+                })();
+                </script>
+                
+                <noscript>
+                    <img src='//old.kurs.com.ua/static/images/informer/kurs.png' width='52' height='26' 
+                         alt='kurs.com.ua: курс валют в Україні!' title='Курс валют' border='0' />
+                </noscript>
+            </div>
+            
+            <p class="widget-note">* Дані оновлюються автоматично</p>
+        </section>
+
+        <!-- LIGHTBOX ДЛЯ ЗБІЛЬШЕННЯ ЗОБРАЖЕНЬ -->
+        <div id="lightbox" class="lightbox">
+            <span class="lightbox-close">&times;</span>
+            <img src="" alt="Збільшене зображення" id="lightbox-img">
+        </div>
+    </main>
+
+    <!-- ПІДВАЛ САЙТУ -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Кав'ярня "Твоя Кава"</h3>
+                <p>м. Київ, вул. Лабораторна, 28</p>
+                <p>Email: <a href="mailto:tvoya.kava@gmail.com">tvoya.kava@gmail.com</a></p>
+            </div>
+
+            <div class="footer-socials">
+                <h4>Ми в соцмережах</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="mailto:tvoya.kava@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Твоя Кава | 
+                <a href="author.html">Автор сайту</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Кнопка повернення вгору -->
+    <button id="scroll-to-top" class="scroll-to-top" title="Повернутися вгору">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Підключення JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>

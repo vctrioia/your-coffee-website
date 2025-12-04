@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Галерея кав'ярні Твоя Кава - фото інтер'єру, кави та десертів">
+    <meta name="keywords" content="галерея, фото, кав'ярня, інтер'єр, Київ">
+    <title>Галерея - Твоя Кава</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="icon" href="img/favicon-coffee.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- ШАПКА САЙТУ -->
+    <header>
+        <nav class="navbar navbar-content">
+            <!-- Логотип -->
+            <a href="index.html" class="nav-logo">
+                <img class="logo-img" src="img/logo.png" alt="Логотип кав'ярні Твоя Кава">
+                <h2 class="logo-text">Твоя Кава</h2>
+            </a>
+
+            <!-- Навігаційне меню -->
+            <ul class="nav-menu">
+                <button id="menu-close-button" class="fas fa-times" aria-label="Закрити меню"></button>
+                <li class="nav-item"><a href="index.html" class="nav-link">Головна</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">Про нас</a></li>
+                <li class="nav-item"><a href="menu.html" class="nav-link">Меню</a></li>
+                <li class="nav-item"><a href="gallery.html" class="nav-link active">Галерея</a></li>
+                <li class="nav-item"><a href="contacts.html" class="nav-link">Контакти</a></li>
+                <li class="nav-item"><a href="author.html" class="nav-link">Автор</a></li>
+            </ul>
+
+            <!-- Кнопка відкриття меню (мобільна версія) -->
+            <button id="menu-open-button" class="fas fa-bars" aria-label="Відкрити меню"></button>
+        </nav>
+    </header>
+
+    <!-- ОСНОВНИЙ КОНТЕНТ -->
+    <main class="gallery-page">
+        <!-- ЗАГОЛОВОК СТОРІНКИ -->
+        <section class="gallery-header">
+            <h1 class="gallery-title">Наша галерея</h1>
+            <p class="gallery-subtitle">Атмосфера, яку варто побачити</p>
+        </section>
+
+        <!-- ФІЛЬТРИ КАТЕГОРІЙ -->
+        <section class="gallery-filters">
+            <button class="gallery-filter-btn active" data-filter="all">
+                <i class="fas fa-th"></i> Усі фото
+            </button>
+            <button class="gallery-filter-btn" data-filter="interior">
+                <i class="fas fa-couch"></i> Інтер'єр
+            </button>
+            <button class="gallery-filter-btn" data-filter="coffee">
+                <i class="fas fa-coffee"></i> Кава
+            </button>
+            <button class="gallery-filter-btn" data-filter="desserts">
+                <i class="fas fa-cake-candles"></i> Десерти
+            </button>
+            <button class="gallery-filter-btn" data-filter="events">
+                <i class="fas fa-calendar-day"></i> Події
+            </button>
+        </section>
+
+        <!-- СІТКА ГАЛЕРЕЇ -->
+        <section class="gallery-grid">
+            <!-- ІНТЕР'ЄР -->
+            <article class="gallery-item" data-category="interior">
+                <img src="img/gallery/cozy.jpg" alt="Інтер'єр кав'ярні" class="gallery-img" data-title="Затишний куточок для роботи">
+                <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+            </article>
+
+            <article class="gallery-item" data-category="interior">
+                <img src="img/gallery/hall.jpg" alt="Головний зал" class="gallery-img" data-title="Головний зал кав'ярні">
+                <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+            </article>
+
+            <article class="gallery-item" data-category="interior">
+                <img src="img/gallery/bar.jpg" alt="Барна стійка" class="gallery-img" data-title="Барна стійка">
+                <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+            </article>
+
+            <article class="gallery-item" data-category="interior">
+                <img src="img/gallery/sofa.jpg" alt="М'які дивани" class="gallery-img" data-title="М'які дивани біля вікна">
+                <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+            </article>
+
+            <!-- КАВА -->
+            <article class="gallery-item" data-category="coffee">
+                <img src="img/menu/capuccino.jpg" alt="Капучино" class="gallery-img" data-title="Ідеальний капучино з латте-артом">
+                <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+            </article>
+
+            <article class="gallery-item" data-category="coffee">
+                <img src="img/gallery/coffee-beans.jpg" alt="Кавові зерна" class="gallery-img" data-title="Свіжозмелена кава">
+                <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+            </article>
+
+            <article class="gallery-item" data-category="coffee">
+                <img src="img/menu/flat-white.jpg" alt="Флет Вайт" class="gallery-img" data-title="Флет Вайт з бархатистою піною">
+                <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+            </article>
+
+            <article class="gallery-item" data-category="coffee">
+                <img src="img/menu/latte.jpg" alt="Латте" class="gallery-img" data-title="Латте з красивою піною">
+                <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+            </article>
+
+            <!-- ДЕСЕРТИ -->
+            <article class="gallery-item" data-category="desserts">
+                <img src="img/menu/cheesecake.jpg" alt="Чізкейк" class="gallery-img" data-title="Домашній чізкейк">
+                <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+            </article>
+
+            <article class="gallery-item" data-category="desserts">
+                <img src="img/menu/tiramisu.jpg" alt="Тірамісу" class="gallery-img" data-title="Класичне тірамісу">
+                <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+            </article>
+
+            <article class="gallery-item" data-category="desserts">
+                <img src="img/menu/brownie.jpg" alt="Брауні" class="gallery-img" data-title="Шоколадний брауні">
+                <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+            </article>
+
+            <article class="gallery-item" data-category="desserts">
+                <img src="img/menu/macaron.jpg" alt="Макарони" class="gallery-img" data-title="Асорті макаронів">
+                <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+            </article>
+
+            <!-- ПОДІЇ -->
+            <article class="gallery-item" data-category="events">
+                <img src="img/gallery/concert.jpg" alt="Концерт" class="gallery-img" data-title="Вечірній концерт у кав'ярні">
+                <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+            </article>
+
+            <article class="gallery-item" data-category="events">
+                <img src="img/gallery/latte-class.jpg" alt="Майстер-клас" class="gallery-img" data-title="Майстер-клас з латте-арту">
+                <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+            </article>
+
+            <article class="gallery-item" data-category="events">
+                <img src="img/gallery/birthday.jpg" alt="Свято" class="gallery-img" data-title="День народження кав'ярні">
+                <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+            </article>
+
+            <article class="gallery-item" data-category="events">
+                <img src="img/gallery/books.jpg" alt="Книжковий клуб" class="gallery-img" data-title="Книжковий клуб">
+                <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+            </article>
+        </section>
+
+        <!-- LIGHTBOX ДЛЯ ЗБІЛЬШЕННЯ ЗОБРАЖЕНЬ -->
+        <div id="gallery-lightbox" class="lightbox">
+            <span class="lightbox-close">&times;</span>
+            <img src="" alt="Збільшене зображення" id="gallery-lightbox-img">
+            <p id="gallery-lightbox-caption"></p>
+        </div>
+    </main>
+
+    <!-- ПІДВАЛ САЙТУ -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Кав'ярня "Твоя Кава"</h3>
+                <p>м. Київ, вул. Лабораторна, 28</p>
+                <p>Email: <a href="mailto:tvoya.kava@gmail.com">tvoya.kava@gmail.com</a></p>
+            </div>
+
+            <div class="footer-socials">
+                <h4>Ми в соцмережах</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="mailto:tvoya.kava@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Твоя Кава | 
+                <a href="author.html">Автор сайту</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Кнопка повернення вгору -->
+    <button id="scroll-to-top" class="scroll-to-top" title="Повернутися вгору">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Підключення JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>

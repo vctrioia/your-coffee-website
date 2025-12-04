@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Кав'ярня Твоя Кава у Києві. Смачна кава, десерти, затишна атмосфера. Замовляй онлайн!">
+    <meta name="keywords" content="кава, кав'ярня, Київ, десерти, капучино">
+    <title>Твоя Кава</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="icon" href="img/favicon-coffee.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- ШАПКА САЙТУ -->
+    <header>
+        <nav class="navbar navbar-content">
+            <!-- Логотип -->
+            <a href="index.html" class="nav-logo">
+                <img class="logo-img" src="img/logo.png" alt="Логотип кав'ярні Твоя Кава">
+                <h2 class="logo-text">Твоя Кава</h2>
+            </a>
+
+            <!-- Навігаційне меню -->
+            <ul class="nav-menu">
+                <button id="menu-close-button" class="fas fa-times" aria-label="Закрити меню"></button>
+                <li class="nav-item"><a href="index.html" class="nav-link active">Головна</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">Про нас</a></li>
+                <li class="nav-item"><a href="menu.html" class="nav-link">Меню</a></li>
+                <li class="nav-item"><a href="gallery.html" class="nav-link">Галерея</a></li>
+                <li class="nav-item"><a href="contacts.html" class="nav-link">Контакти</a></li>
+                <li class="nav-item"><a href="author.html" class="nav-link">Автор</a></li>
+            </ul>
+
+            <!-- Кнопка відкриття меню (мобільна версія) -->
+            <button id="menu-open-button" class="fas fa-bars" aria-label="Відкрити меню"></button>
+        </nav>
+    </header> 
+
+    <!-- ОСНОВНИЙ КОНТЕНТ -->
+    <main>
+        <!-- HERO СЕКЦІЯ - Головний банер -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <div class="hero-details">
+                    <h2 class="hero-title">Твоя улюблена кава — тут і зараз</h2>
+                    <h3 class="hero-subtitle">Смак, що зігріває. Атмосфера, що надихає.</h3>
+                    <p class="hero-description">
+                        Ми готуємо каву з добірних зерен, обсмажених із турботою та любов'ю.
+                        Завітай до нашої кав'ярні або замовляй онлайн — зроби свій день ароматнішим просто зараз.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="menu.html" class="button order-now">Замовити зараз</a>
+                        <a href="contacts.html" class="button contact-us">Зв'язатися з нами</a>
+                    </div>
+                </div>
+
+                <div class="hero-img-wrapper">
+                    <img src="img/cup-of-coffe-hero-section.png" alt="Чашка кави" class="hero-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- ПЕРЕВАГИ - Чому обирають нас -->
+        <section class="features">
+            <h2 class="features-title">Чому обирають нас</h2>
+            <div class="features-list">
+                <article class="feature-item">
+                    <i class="fas fa-coffee"></i>
+                    <h3>Добірні зерна</h3>
+                    <p>Ми працюємо тільки з перевіреними постачальниками.</p>
+                </article>
+
+                <article class="feature-item">
+                    <i class="fas fa-wifi"></i>
+                    <h3>Затишна атмосфера</h3>
+                    <p>Ідеально для навчання, роботи та зустрічей.</p>
+                </article>
+
+                <article class="feature-item">
+                    <i class="fas fa-cookie-bite"></i>
+                    <h3>Свіжі десерти</h3>
+                    <p>Випікаємо солодощі щодня у власній кухні.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- ПОПУЛЯРНІ НАПОЇ - Слайдер -->
+        <section class="popular">
+            <h2 class="popular-title">Популярні напої</h2>
+
+            <div class="slider">
+                <div class="slide active">
+                    <img src="img/menu/latte.jpg" alt="Латте">
+                    <p class="slide-caption">Латте — ніжний смак молока та кави</p>
+                </div>
+                <div class="slide">
+                    <img src="img/menu/capuccino.jpg" alt="Капучино">
+                    <p class="slide-caption">Капучино — класичний італійський смак</p>
+                </div>
+                <div class="slide">
+                    <img src="img/menu/matcha.jpg" alt="Матча Лате">
+                    <p class="slide-caption">Матча Лате — зелений чай з ніжним молоком</p>
+                </div>
+            </div>
+
+            <div class="slider-buttons">
+                <button id="prev" aria-label="Попередній">←</button>
+                <button id="next" aria-label="Наступний">→</button>
+            </div>
+        </section>
+
+        <!-- АКЦІЯ - Таймер зворотного відліку -->
+        <section class="discount">
+            <h2 class="discount-title">Акція тижня</h2>
+            <p class="discount-caption">До кінця знижки залишилось:</p>
+            <div id="timer"></div>
+        </section>
+
+        <!-- ВІДЕО - Як ми готуємо каву -->
+        <section class="video">
+            <h2 class="video-title">Як ми готуємо каву</h2>
+            <iframe src="https://www.youtube.com/embed/0jIeCAOkgcQ?si=fJskCjSDQVrMGftA" 
+                title="YouTube video player" loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </section>
+
+        <!-- POPUP - Пропозиція знижки -->
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <p>Отримай -10% на перше замовлення!</p>
+                <div class="popup-buttons">
+                    <button id="close-popup" class="button">Закрити</button>
+                    <a href="menu.html" class="button order-now">Меню</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ЗАКЛИК ДО ДІЇ -->
+        <section class="cta">
+            <h2>Завітай до нас вже сьогодні</h2>
+            <p>Ми працюємо щодня з 8:00 до 22:00</p>
+            <a href="contacts.html" class="button contacts">Контакти</a>
+        </section>
+    </main>
+
+    <!-- ПІДВАЛ САЙТУ -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Кав'ярня "Твоя Кава"</h3>
+                <p>м. Київ, вул. Лабораторна, 28</p>
+                <p>Email: <a href="mailto:tvoya.kava@gmail.com">tvoya.kava@gmail.com</a></p>
+            </div>
+
+            <div class="footer-socials">
+                <h4>Ми в соцмережах</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="mailto:tvoya.kava@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Твоя Кава | 
+                <a href="author.html">Автор сайту</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Кнопка повернення вгору -->
+    <button id="scroll-to-top" class="scroll-to-top" title="Повернутися вгору">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Підключення JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>

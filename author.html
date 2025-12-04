@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Про автора сайту кав'ярні Твоя Кава">
+    <meta name="keywords" content="автор, розробник, веб-дизайн, студент">
+    <title>Автор сайту - Твоя Кава</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="icon" href="img/favicon-coffee.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- ШАПКА САЙТУ -->
+    <header>
+        <nav class="navbar navbar-content">
+            <!-- Логотип -->
+            <a href="index.html" class="nav-logo">
+                <img class="logo-img" src="img/logo.png" alt="Логотип кав'ярні Твоя Кава">
+                <h2 class="logo-text">Твоя Кава</h2>
+            </a>
+
+            <!-- Навігаційне меню -->
+            <ul class="nav-menu">
+                <button id="menu-close-button" class="fas fa-times" aria-label="Закрити меню"></button>
+                <li class="nav-item"><a href="index.html" class="nav-link">Головна</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">Про нас</a></li>
+                <li class="nav-item"><a href="menu.html" class="nav-link">Меню</a></li>
+                <li class="nav-item"><a href="gallery.html" class="nav-link">Галерея</a></li>
+                <li class="nav-item"><a href="contacts.html" class="nav-link">Контакти</a></li>
+                <li class="nav-item"><a href="author.html" class="nav-link active">Автор</a></li>
+            </ul>
+
+            <!-- Кнопка відкриття меню (мобільна версія) -->
+            <button id="menu-open-button" class="fas fa-bars" aria-label="Відкрити меню"></button>
+        </nav>
+    </header>
+
+    <!-- ОСНОВНИЙ КОНТЕНТ -->
+    <main class="author-page">
+        <!-- ПРОФІЛЬ АВТОРА -->
+        <section class="author-profile">
+            <div class="author-container">
+                <!-- Фото автора -->
+                <div class="author-photo">
+                    <img src="img/author.jpg" alt="Фото автора">
+                </div>
+
+                <!-- Інформація про автора -->
+                <div class="author-info">
+                    <h1 class="author-name">Конюхова Вікторія Вікторівна</h1>
+
+                    <p class="author-role">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Студентка інституту комп'ютерних наук та інформаційних технологій</span>
+                    </p>
+
+                    <div class="author-details">
+                        <p class="author-university">
+                            <i class="fas fa-university"></i>
+                            <span>Національний університет "Львівська політехніка"</span>
+                        </p>
+                        <p><i class="fas fa-users"></i> <strong>Група:</strong> ПП-21з</p>
+                        <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:vkonuhova440@gmail.com">vkonuhova440@gmail.com</a></p>
+                        <p><i class="fas fa-calendar"></i> <strong>Рік навчання:</strong> 2025/2026</p>
+                    </div>
+
+                    <!-- Соціальні мережі -->
+                    <div class="author-socials">
+                        <a href="https://github.com/vctrioia" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://t.me/smdtlv" target="_blank" aria-label="Telegram">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="mailto:vkonuhova440@gmail.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ІНФОРМАЦІЯ ПРО ПРОЄКТ -->
+        <section class="project-info">
+            <h2 class="section-title">Про проєкт</h2>
+            
+            <div class="project-description">
+                <p>
+                    Цей веб-сайт створено як самостійну навчальну роботу з дисципліни "Технології веб-розробки та дизайну". 
+                    Проєкт демонструє мої практичні навички у створенні сучасних, адаптивних веб-інтерфейсів 
+                    із застосуванням HTML5, CSS3 та JavaScript.
+                </p>
+                <p>
+                    Сайт представляє вигадану кав'ярню <strong>"Твоя Кава"</strong>, яка поєднує затишну атмосферу, 
+                    якісну каву та дружній сервіс. У процесі роботи я реалізувала адаптивний дизайн для всіх 
+                    пристроїв, інтерактивні елементи, слайдери, фільтрування галереї та контактну форму з валідацією. 
+                    Всі матеріали, зображення та тексти використовуються виключно в освітніх цілях.
+                </p>
+                <p>
+                    Цей проєкт підкреслює мою увагу до деталей, розуміння сучасних веб-технологій та здатність 
+                    створювати приємні для користувача, функціональні інтерфейси.
+                </p>
+            </div>
+        </section>
+
+
+        <!-- ВИКОРИСТАНІ ТЕХНОЛОГІЇ -->
+        <section class="technologies">
+            <h2 class="section-title">Використані технології</h2>
+
+            <div class="tech-grid">
+                <!-- HTML5 -->
+                <article class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML5</h3>
+                    <p>Семантична верстка з використанням сучасних тегів</p>
+                </article>
+
+                <!-- CSS3 -->
+                <article class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3>CSS3</h3>
+                    <p>Flexbox, Grid, анімації та адаптивний дизайн</p>
+                </article>
+
+                <!-- JavaScript -->
+                <article class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>Інтерактивні елементи, слайдери, фільтри, валідація форм</p>
+                </article>
+
+                <!-- Font Awesome -->
+                <article class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fab fa-font-awesome"></i>
+                    </div>
+                    <h3>Font Awesome</h3>
+                    <p>Іконкові шрифти для інтерфейсу</p>
+                </article>
+
+                <!-- Google Maps -->
+                <article class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>Google Maps</h3>
+                    <p>Інтерактивна карта розташування</p>
+                </article>
+
+                <!-- Lightbox -->
+                <article class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-images"></i>
+                    </div>
+                    <h3>Lightbox</h3>
+                    <p>Власна реалізація lightbox для перегляду зображень</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- РЕАЛІЗОВАНІ МОЖЛИВОСТІ (генерується через JavaScript) -->
+        <section class="features-section">
+            <!-- Контент буде згенеровано динамічно через script.js -->
+        </section>
+
+        <!-- ПОДЯКА -->
+        <section class="thanks-section">
+            <div class="thanks-content">
+                <h2>Дякую за увагу!</h2>
+                <p>
+                    Цей проєкт став чудовим досвідом у вивченні сучасних веб-технологій. 
+                    Якщо у вас є питання або пропозиції — буду радий відповісти!
+                </p>
+                <a href="contacts.html" class="button contact-author-btn">
+                    <i class="fas fa-envelope"></i> Зв'язатися зі мною
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- ПІДВАЛ САЙТУ -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Кав'ярня "Твоя Кава"</h3>
+                <p>м. Київ, вул. Лабораторна, 28</p>
+                <p>Email: <a href="mailto:tvoya.kava@gmail.com">tvoya.kava@gmail.com</a></p>
+            </div>
+
+            <div class="footer-socials">
+                <h4>Ми в соцмережах</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="mailto:tvoya.kava@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Твоя Кава | 
+                <a href="author.html">Автор сайту</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Кнопка повернення вгору -->
+    <button id="scroll-to-top" class="scroll-to-top" title="Повернутися вгору">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Підключення JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
